@@ -7,7 +7,9 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "test": "jest --watch"
+    "test": "jest --watch",
+    "docker": "docker build . -t practice-next",
+    "docer:start": "docker run -p 3000:3000 practice-next"
   },
   "dependencies": {
     "next": "11.1.2",
