@@ -1,15 +1,31 @@
-import React from 'react';
-import { render, screen } from '@testing-library/react';
-import Home from '../pages/index';
+import React from "react";
+import { render, screen } from "@testing-library/react";
+import Home from "../pages/index";
 
-describe('Home', () => {
-  it('renders a heading', () => {
+describe("Home", () => {
+  it("메뉴가 렌더링 되어야 한다.", () => {
     render(<Home />);
 
-    const heading = screen.getByRole('heading', {
-      name: /welcome to next\.js!/i,
+    const menu = screen.getByRole("navigation", {
+      name: "SeoWS2",
     });
 
-    expect(heading).toBeInTheDocument();
+    expect(menu).toBeInTheDocument();
+  });
+
+  it("배너가 렌더링 되어야 한다.", () => {
+    render(<Home />);
+
+    const banner = screen.getByRole("banner", {});
+
+    expect(banner).toBeInTheDocument();
+  });
+
+  it("강의 목록이 렌더링 되어야 한다.", () => {
+    render(<Home />);
+
+    const lectureList = screen.getByTitle("lectureList", {});
+
+    expect(lectureList).toBeInTheDocument();
   });
 });
