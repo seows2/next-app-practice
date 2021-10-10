@@ -2,6 +2,8 @@ import type { NextPage } from "next";
 import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
+import Banner from "../components/Banner";
+import Menu from "../components/Menu";
 
 const Home: NextPage = () => {
   return (
@@ -12,13 +14,8 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <nav aria-label="SeoWS2">
-        <h2>SeoWS2</h2>
-      </nav>
-
-      <div role="banner">
-        <h2>배너</h2>
-      </div>
+      <Menu />
+      <Banner />
 
       <div title="lectureList">
         <h2>강의 목록</h2>
