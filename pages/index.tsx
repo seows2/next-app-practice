@@ -2,7 +2,9 @@ import type { NextPage } from "next";
 import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
-import Detail from "./detail";
+import Banner from "../components/Banner";
+import Menu from "../components/Menu";
+import LectureGroup from "../components/lecture/LectureGroup";
 
 const Home: NextPage = () => {
   return (
@@ -13,7 +15,9 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Detail />
+      <Menu />
+      <Banner />
+      <LectureGroup />
 
       <footer className={styles.footer}>
         <a
