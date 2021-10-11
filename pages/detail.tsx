@@ -6,7 +6,7 @@ import Banner from "../components/Banner";
 import Menu from "../components/Menu";
 import LectureGroup from "../components/lecture/LectureGroup";
 
-const Home: NextPage = () => {
+const Detail: NextPage = () => {
   return (
     <div className={styles.container}>
       <Head>
@@ -35,4 +35,4 @@ const Home: NextPage = () => {
   );
 };
 
-export default Home;
+export default Detail;
