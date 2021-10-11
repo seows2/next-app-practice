@@ -20,12 +20,4 @@ describe("Home", () => {
 
     expect(banner).toBeInTheDocument();
   });
-
-  it("강의 목록이 렌더링 되어야 한다.", () => {
-    render(<Home />);
-
-    const lectureList = screen.getByTitle("lectureList", {});
-
-    expect(lectureList).toBeInTheDocument();
-  });
 });
