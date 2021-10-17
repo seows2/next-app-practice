@@ -10,7 +10,7 @@
     "test": "jest",
     "test:watch": "jest --watch",
     "docker": "docker build . -t practice-next",
-    "docer:start": "docker run -p 3000:3000 practice-next"
+    "docker:start": "docker run -p 3000:3000 practice-next"
   },
   "dependencies": {
     "next": "11.1.2",
