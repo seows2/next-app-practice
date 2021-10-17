@@ -1,5 +1,5 @@
 import React from "react";
-import { Lecture } from "interface/lecture";
+import { Lecture } from "../../interface/lecture";
 import TagList from "../tags/TagList";
 
 interface Props {
