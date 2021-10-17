@@ -2,11 +2,10 @@ import React from "react";
 import LectureItem from "./LectureItem";
 import { useQuery } from "react-query";
 import { Lecture } from "interface/lecture";
+import useLectures from "hooks/useLectures";
 
 const LectureList = (): JSX.Element => {
-  const { isLoading, data } = useQuery("lecture_list", () =>
-    fetch("/api/lectures").then((res) => res.json())
-  );
+  const { isLoading, data } = useLectures();
 
   if (isLoading) return <div>로딩 중...</div>;
 
